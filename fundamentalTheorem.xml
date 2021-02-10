@@ -5,14 +5,14 @@
     <title>The Fundamental Theorem of Complex Analysis and its immediate consequences</title>
 
     <introduction>
-      
+
       In this chapter we are going to illustrate how strong is the property of being complex-differentiable
       for a map <m>\bR^2\to\bR^2</m>. In comparison with differentiability of maps <m>\bR\to\bR</m>,
       the complex counterpart turns out to be extremely more rigid. We will ultimately show that a map
       that is complex-differentiable over an open set is actually <em>analytic</em> on that very set.
-      
+
     </introduction>
-      
+
     <section xml:id="sec-funcSpaces">
       <title>Some relevant spaces of differentiable maps</title>
 
@@ -27,7 +27,7 @@
 
       <p>
 	Since differentiabilty implies continuity, clearly <m>C^{k-1}(V)\supset D^k(V)</m>.
-	More generally, 
+	More generally,
 	<me>
 	  C^0(V)\supset D^1(V)\supset C^1(V)\supset D^2(V)\supset C^2(V)\supset\dots\supset D^k(V)\supset C^k(V)\supset\dots
 	</me>
@@ -37,10 +37,10 @@
 	In the real case, these spaces are all distinct.
 	<em>[PUT EXAMPLES!!!]</em>
       </p>
-      
+
     </section>
     <section xml:id="sec-fun">
-      <title>The Fundamental Theorem</title>
+      <title>The Fundamental Theorems</title>
 
       <theorem>
 	<p>
@@ -52,7 +52,7 @@
 	    <li><m>f</m> is holomorphic in <m>\Omega</m>;</li>
 	    <li><m>f</m> is continuously differentiable at every point of <m>\Omega</m>;</li>
 	    <li>(<em>Cauchy-Riemann equations</em>) <m>u</m> and <m>v</m>, as real maps, have continuous partial derivatives
-	    and satisfy 
+	    and satisfy
 	    <me>\begin{cases}u_x&amp;\!=v_y\cr u_y&amp;\!=-v_x\cr\end{cases}</me>
 	    at every point of <m>\Omega</m>;
 	    </li>
@@ -77,7 +77,7 @@
 	We prove the theorem through the following chain of implications:
 	<m>2\implies3\implies4\implies5\implies6\implies7\implies8\implies1\implies9\implies10\implies2</m>.
       </p>
-      
+
       <p>
 	<m>2\implies3</m>
       </p>
@@ -112,12 +112,12 @@
 	</me>
 	<me>
 	  =
-	  -iu_y(x_0,y_0) +  v_y(x_0,y_0).	  
+	  -iu_y(x_0,y_0) +  v_y(x_0,y_0).
 	</me>
 	</p>
 	By comparing these two expressions we get the Cauchy-Riemann equations.
       </proof>
-      
+
       <p>
 	<m>3\implies4</m>
       </p>
@@ -127,14 +127,14 @@
 	  f_{\bar z} = \frac{1}{2}\left[(u_x-v_y)+i(v_x+u_y)\right] = 0.
 	</me>
       </proof>
-      
+
       <p>
 	<m>4\implies5</m>
       </p>
       <proof>
 	Since <m>dz\wedge dz</m>, <m>d(fdz)=(f_z dz + f_{\bar z} d\bar z)\wedge dz = f_{\bar z}d\bar z\wedge dz = 0</m>.
       </proof>
-      
+
       <p>
 	<m>5\implies6</m>
       </p>
@@ -150,7 +150,7 @@
 	  =
 	  \int\limits_{\varepsilon\lt|\zeta-z_0|\lt r}d\left(\frac{f(\zeta)}{\zeta-z_0}d\zeta\right)=0
 	</me>
-	for every <m>\varepsilon\lt r</m>. 
+	for every <m>\varepsilon\lt r</m>.
 	Since <m>f</m> is differentiable at <m>z_0</m>, on <m>|z-z_0|=\varepsilon</m> we have that
 	<m>f(\zeta)=f(z_0)+\varepsilon g(\zeta)</m>, with <m>\lim_{\zeta\to z_0}g(\zeta)=0</m>.
 	Hence
@@ -170,7 +170,7 @@
 	Since <m>dF=F'dz</m> then, close to <m>z_0</m>, <m>F'=f</m>.
 -->
       </proof>
-      
+
       <p>
 	<m>6\implies7</m>
       </p>
@@ -179,7 +179,7 @@
 	We can prove WLOG the theorem for <m>z_0=0</m>, so that
 	<me>\displaystyle f(z) = \frac{1}{2\pi i}\!\!\int\limits_{C_0(r)}\frac{f(\zeta)}{\zeta-z}d\zeta</me>
 	for <m>|z|</m> small enough. Notice that, since <m>\zeta\in C_0(r)</m>, <m>|z|\lt|\zeta|</m> and so
-	<me>\frac{1}{\zeta-z} = \frac{1}{\zeta}\frac{1}{1-\frac{z}{\zeta}}=\frac{1}{\zeta}\sum_{n=0}^\infty\left(\frac{z}{\zeta}\right)^n,</me> 
+	<me>\frac{1}{\zeta-z} = \frac{1}{\zeta}\frac{1}{1-\frac{z}{\zeta}}=\frac{1}{\zeta}\sum_{n=0}^\infty\left(\frac{z}{\zeta}\right)^n,</me>
 	which converges uniformly in <m>\zeta</m> over compacts.
 	</p>
 	<p>
@@ -195,7 +195,7 @@
 	  </me>
 	</p>
       </proof>
-      
+
       <p>
 	<m>7\implies8</m>
       </p>
@@ -204,7 +204,7 @@
 	namely locally <m>fdz=dF</m> for some holomorphich map <m>F</m>. Since <m>dF=F'dz</m>,
 	it follows that locally <m>f=F'</m>.
       </proof>
-<!--      
+<!--
       <p>
 	<m>8\implies9</m>
       </p>
@@ -214,7 +214,7 @@
 	<m>f</m> is also <m>C^\infty</m> and, in particular, holomorphic. Hence <m>fdz</m> is closed
 	and the claim follows.
       </proof>
--->      
+-->
       <p>
 	<m>8\implies1</m>
       </p>
@@ -223,7 +223,7 @@
 	Since we already proved that <m>2\implies6</m>, <m>F</m> is <m>C^\infty</m> and so
 	<m>f</m> is also <m>C^\infty</m> and, in particular, holomorphic.
       </proof>
-      
+
       <p>
 	<m>1\implies9</m>
       </p>
@@ -234,7 +234,7 @@
 
 	  [ADD PROOF]
       </proof>
-      
+
       <p>
 	<m>9\implies10</m>
       </p>
@@ -261,14 +261,14 @@
 	  The fact that every rational function with a pole in some component of <m>\overline{\bC}\setminus K</m>
 	  can be uniformly approximated in <m>K</m> by a sequence of rational functions having as pole a given
 	  point of that same component was proven in [ADD THIS THM IN THE POWER SERIES CHAPTER!!]
-	  <!-- 
+	  <!--
 	  We still have to prove that every rational function with a pole in some component of <m>\bC\setminus K</m>
 	  can be uniformly approximated in <m>K</m> by a sequence of rational functions having as pole a given
 	  point of that same component.
 	  -->
 	</p>
       </proof>
-      
+
       <p>
 	<m>10\implies2</m>
       </p>
@@ -280,7 +280,7 @@
       <p>
 	Before discussing the many important consequences of this theorem, several remarks are in order.
       </p>
-      
+
       <subsection>
 	<title>Cauchy's Theorem</title>
 	<p>
@@ -297,7 +297,7 @@
 	</p>
       </subsection>
       <subsection>
-	<title>Cauchy-Riemann equations.</title>	
+	<title>Cauchy-Riemann equations.</title>
       <p>
 	Equations in staments 3 and 4 are known as, respectively, the real and complex version of the Cauchy-Riemann equations.
 	Clearly in statement 4 we are assuming that <m>f</m> is complex differentiable. In statement 3, though, we are not and
@@ -427,7 +427,7 @@
 
         <exercise>
             <title>The Sieve of Eratosthenes</title>
-            <idx><h>Sieve of Eratosthenes</h></idx>  
+            <idx><h>Sieve of Eratosthenes</h></idx>
             <statement>
                 <p>One method of computing all of the prime numbers less than a certain fixed positive integer <m>N</m> is to list all of the numbers <m>n</m> such that <m>1 \lt n \lt N</m>.  Begin by eliminating all of the multiples of 2.  Next eliminate all of the multiples of 3. Now eliminate all of the  multiples of 5.  Notice that 4 has already been crossed out.  Continue in this manner, noticing that we do not have to go all the way to <m>N</m>; it suffices to stop at <m>\sqrt{N}</m>. Using this method, compute all of the prime numbers less than <m>N = 250</m>.  We can also use this method to find all of the integers that are relatively prime to an integer <m>N</m>.  Simply eliminate the prime factors of <m>N</m> and all of their multiples.  Using this method, find all of the numbers that are relatively prime to <m>N= 120</m>.  Using the Sieve of Eratosthenes, write a program that will compute all of the primes less than an integer <m>N</m>. </p>
             </statement>
@@ -448,7 +448,7 @@
 
         <exercise>
             <statement>
-                <p>Write a computer program that will implement the Euclidean algorithm.  The program should accept two positive integers <m>a</m> and <m>b</m> as input and should output <m>\gcd( a,b)</m> as well as integers <m>r</m> and <m>s</m> such that 
+                <p>Write a computer program that will implement the Euclidean algorithm.  The program should accept two positive integers <m>a</m> and <m>b</m> as input and should output <m>\gcd( a,b)</m> as well as integers <m>r</m> and <m>s</m> such that
                     <me>\gcd( a,b) = ra + sb</me>.</p>
             </statement>
         </exercise>
