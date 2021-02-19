@@ -379,7 +379,47 @@
 	</p>
 	<m></m> <m></m> <m></m> <m></m> <m></m>
       </proof>
+
+            </subsection>
+      <subsection>
+	<title>Runge's Theorem.</title>
+	<p>
+	  The following theorem, named after Carl Runge, who first proved it in 1885 is very useful.
+	  <theorem>
+	    <p>
+	       Let $f: \mathbb{C} \to \mathbb{C}$ be a holomomorphic function on $\Omega$ amd let $K \subset \Omega$ with $K$ compact. 
+         Then $f$ can be uniformly approximated on $K$ by a sum of rational functions so that that the set of their poles consists 
+         of a single point that can be chosen arbitrarily from each component of $C-K$
+	      
+	    </p>
+      </p>
+      <proof>
+        $1)$ Let $f(z)=(\frac{1}{2\pi})  \int_{\Gamma}\frac{f(\xi)}{\xi-z}d\xi$ for all $ z \in K$. Since $z$ is inside exactly one 
+        component of $\Gamma$,on some component, (say $\gamma_{1}$ in fig xxxx) we get $f(z)$, and we get $0$ on all other components. 
+
+        $2)$ Each $f(z)=\int_{\gamma_{i}}\frac{f(\xi)}{\xi-z}d\xi$ can be approximated by Riemann sums. Now, 
+        $f(z)=\int_{\gamma_{i}}\frac{f(\xi)}{\xi-z}d\xi$= $\int_{0}^{1}\frac{f(\xi(t))}{\xi(t)-z}\xi(t)dt$=$\sum_{k=0}^{N}\frac{f(p_k)}{p_k-z}v_{k}+O(N)$
+        Each summand is a rational function in $z$ whose poles lie in $\Gamma$.
+        The error term is $$\frac{1}{2n}*max_{[0,1]}\frac{d}{dt}[\frac{f(\xi(t))}{\xi(t)-z}\xi(t)dt]$$ 
+        which is bounded for $z \in K$ since is $K \times  [0,1]$ compact. Hence the convergence is uniform
+
+        $3)$ Within each connected component of $\mathbb{C} \K$. We can develelop each rational function in terms of a single  rational 
+        function having a pole at a fixed point. For instance we can develop $\frac{1}{z-p}$ in terms of $\frac{1}{z-q}$. To do so just 
+        join $p$ and $q$ with a curve contained in the same connected component. Subdivide $\gamma$ with point $p_i$ so close that each 
+        disk centered at $p_i$ with radius $\abs{p_{i+1}-p_i}$ does not intersect $K$ and approximates the rational functions in
+        $\frac{1}{z-p_i}$ with a Laurent series in $\frac{1}{z-p_{i+1}}$
+
+    </proof>
+
+    <p>
+	  
+      </subsection>	
+
+
+
 -->
+	    
+	
 
 <!--
 <p>
